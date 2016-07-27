@@ -30,7 +30,7 @@ public class BubbleSort {
 	}
 	
 	/**
-	 * 冒泡排序,
+	 * 冒泡排序,(正规)
 	 */
 	static void sort2(){
 		//初始数据
