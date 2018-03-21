@@ -3,7 +3,8 @@ package sort;
 import java.util.Arrays;
 
 /**
- * 插入排序
+ * 插入排序：
+ * 假设前半段是有序的，将后面的数据与前面排好序的数据比较，并插入到前面相应的位置
  */
 public class InsertSort {
     public static void main(String[] args) {
