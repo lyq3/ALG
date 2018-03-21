@@ -3,19 +3,19 @@ package sort;
 import java.util.Arrays;
 
 /**
- * Ã°ÅİÅÅĞò
- * »ù±¾Ë¼Ïë£ºÁ½¸öÊı±È½Ï´óĞ¡£¬½Ï´óµÄÊıÏÂ³Á£¬½ÏĞ¡µÄÊıÃ°ÆğÀ´¡££¨»òÏà·´£©
+ * å†’æ³¡æ’åº
+ * åŸºæœ¬æ€æƒ³ï¼šä¸¤ä¸ªæ•°æ¯”è¾ƒå¤§å°ï¼Œè¾ƒå¤§çš„æ•°ä¸‹æ²‰ï¼Œè¾ƒå°çš„æ•°å†’èµ·æ¥ã€‚ï¼ˆæˆ–ç›¸åï¼‰
  * @author Mr.luo
  *
  */
 public class BubbleSort {
 	public static void main(String[] args) {
-		//³õÊ¼Êı¾İ
+		//åˆå§‹æ•°æ®
 		int num[]={79,12,3,56,34,28,9,100,88};
-		
-		//ÖĞ¼ä±äÁ¿
+
+		//ä¸­é—´å˜é‡
 		int tem;
-		for(int i=0 ; i<num.length-1 ; i++){//±íÊ¾ÌËÊı£¬Ò»¹²length-1ÌË
+		for(int i=0 ; i<num.length-1 ; i++){//è¡¨ç¤ºè¶Ÿæ•°ï¼Œä¸€å…±length-1è¶Ÿ
 			for(int j=i+1 ; j<num.length ; j++){
 				if(num[i]>num[j]){
 					tem=num[j];
@@ -28,15 +28,15 @@ public class BubbleSort {
 		sort2();
 		sort3();
 	}
-	
+
 	/**
-	 * Ã°ÅİÅÅĞò,(Õı¹æ)
+	 * å†’æ³¡æ’åº,(æ­£è§„)
 	 */
 	static void sort2(){
-		//³õÊ¼Êı¾İ
+		//åˆå§‹æ•°æ®
 		int num[]={79,12,3,56,34,28,9,100,88};
-		
-		//ÖĞ¼ä±äÁ¿
+
+		//ä¸­é—´å˜é‡
 		int tem;
 		for(int i=0 ; i<num.length-1 ; i++){
 			for(int j=num.length-1 ; i<j ;j--){
@@ -45,20 +45,20 @@ public class BubbleSort {
 					num[j]=num[j-1];
 					num[j-1]=tem;
 				}
-				
+
 			}
 		}
 		System.out.println(Arrays.toString(num));
 	}
-	
+
 	/**
-	 * Ã°ÅİÅÅĞò,ÓÅ»¯£¬(ÍÆ¼ö)
+	 * å†’æ³¡æ’åº,ä¼˜åŒ–ï¼Œ(æ¨è)
 	 */
 	static void sort3(){
-		//³õÊ¼Êı¾İ
+		//åˆå§‹æ•°æ®
 		int num[]={79,12,3,56,34,28,9,88,99,100};
-		
-		//ÖĞ¼ä±äÁ¿
+
+		//ä¸­é—´å˜é‡
 		int tem;
 		boolean flag;
 		for(int i=0 ; i<num.length-1 ; i++){

@@ -3,23 +3,23 @@ package sort;
 import java.util.Arrays;
 
 /**
- * Ñ¡ÔñÅÅÐò
- * »ù±¾Ë¼Ïë£º
- *	ÔÚ³¤¶ÈÎªNµÄÎÞÐòÊý×éÖÐ£¬µÚÒ»´Î±éÀún-1¸öÊý£¬ÕÒµ½×îÐ¡µÄÊýÖµÓëµÚÒ»¸öÔªËØ½»»»£»
- *	µÚ¶þ´Î±éÀún-2¸öÊý£¬ÕÒµ½×îÐ¡µÄÊýÖµÓëµÚ¶þ¸öÔªËØ½»»»£»
- *	¡£¡£¡£
- *	µÚn-1´Î±éÀú£¬ÕÒµ½×îÐ¡µÄÊýÖµÓëµÚn-1¸öÔªËØ½»»»£¬ÅÅÐòÍê³É¡£
+ * é€‰æ‹©æŽ’åº
+ * åŸºæœ¬æ€æƒ³ï¼š
+ *	åœ¨é•¿åº¦ä¸ºNçš„æ— åºæ•°ç»„ä¸­ï¼Œç¬¬ä¸€æ¬¡éåŽ†n-1ä¸ªæ•°ï¼Œæ‰¾åˆ°æœ€å°çš„æ•°å€¼ä¸Žç¬¬ä¸€ä¸ªå…ƒç´ äº¤æ¢ï¼›
+ *	ç¬¬äºŒæ¬¡éåŽ†n-2ä¸ªæ•°ï¼Œæ‰¾åˆ°æœ€å°çš„æ•°å€¼ä¸Žç¬¬äºŒä¸ªå…ƒç´ äº¤æ¢ï¼›
+ *	ã€‚ã€‚ã€‚
+ *	ç¬¬n-1æ¬¡éåŽ†ï¼Œæ‰¾åˆ°æœ€å°çš„æ•°å€¼ä¸Žç¬¬n-1ä¸ªå…ƒç´ äº¤æ¢ï¼ŒæŽ’åºå®Œæˆã€‚
  * @author Mr.luo
  *
  */
 public class SelectionSort {
 	public static void main(String[] args) {
-		//³õÊ¼Êý¾Ý
+		//åˆå§‹æ•°æ®
 		int num[]={79,12,3,56,34,28,9,100,88};
-		//ÖÐ¼ä±äÁ¿
+		//ä¸­é—´å˜é‡
 		int tem;
 		for(int i=0 ; i<num.length-1 ; i++){
-			int minIndex=i;//×îÐ¡ÖµµÃÏÂ±ê
+			int minIndex=i;//æœ€å°å€¼å¾—ä¸‹æ ‡
 			for(int j=i+1 ; j<num.length ; j++){
 				if(num[j]<num[minIndex]){
 					minIndex=j;
