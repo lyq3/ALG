@@ -1,4 +1,4 @@
-package sort;
+package com.lyq3;
 
 import java.util.Arrays;
 
