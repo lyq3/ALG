@@ -41,9 +41,13 @@ public class BubbleSort {
 		for(int i=0 ; i<num.length-1 ; i++){
 			for(int j=num.length-1 ; i<j ;j--){
 				if(num[j]<num[j-1]){
-					tem=num[j];
-					num[j]=num[j-1];
-					num[j-1]=tem;
+//					tem=num[j];
+//					num[j]=num[j-1];
+//					num[j-1]=tem;
+					//交换两个变量值的其中一种方式：利用的思想原理是：一个数异或同一个数两次，结果还是那个数，而且不会超出int范围
+					num[j] = num[j]^num[j-1];
+					num[j-1] = num[j]^num[j-1];
+					num[j] = num[j]^num[j-1];
 				}
 
 			}
